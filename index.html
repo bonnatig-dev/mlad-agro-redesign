@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Прицепное и навесное оборудование для сельхозтехники — Механический завод, Молодечно</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&family=Manrope:wght@500&display=swap" rel="stylesheet">
+<meta name="description" content="Производство прицепного и навесного оборудования для мотоблоков и минитракторов в Молодечно. Более 50 наименований, склад, доставка по Беларуси, гарантия 12 мес.">
+<style>
+:root{
+  --font-family:"Montserrat",sans-serif;
+  --second-family:"Manrope",sans-serif;
+  --green:#175c1c; --green-d:#0f4614; --amber:#fcb400; --amber-d:#e0a000;
+  --ink:#181f19; --ink-2:#3b443d; --steel:#5b635d; --line:#e3e7e3;
+  --bg:#eceeec; --panel:#f3f6f3; --white:#fff; --forest:#0e2615;
+  --r-xl:32px; --r-lg:24px; --r-md:18px; --r-sm:14px;
+  --w:1290px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font:500 16px/1.55 var(--second-family);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{max-width:calc(var(--w) + 48px);margin:0 auto;padding:0 24px}
+h1,h2,h3,h4,b,strong,label,button,.btn,nav,.eyebrow{font-family:var(--font-family)}
+h2{font-size:36px;line-height:1.15;font-weight:600;letter-spacing:-.02em}
+section{padding:36px 0}
+.eyebrow{display:flex;align-items:center;gap:8px;font:500 13px/1 var(--font-family);color:var(--steel)}
+.eyebrow::before{content:"";width:7px;height:7px;background:var(--green);border-radius:2px;flex:none}
+.eyebrow.w{color:#c4d6c7}.eyebrow.w::before{background:var(--amber)}
+
+/* кнопки-пилюли со стрелкой в круге */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:8px 8px 8px 24px;min-height:52px;font:600 15px/1 var(--font-family);text-decoration:none;border:0;cursor:pointer;border-radius:999px;white-space:nowrap;transition:background .15s,color .15s}
+.btn .ar{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-size:16px;flex:none}
+.btn-amber{background:var(--amber);color:#2a1f00}.btn-amber .ar{background:#fff}.btn-amber:hover{background:var(--amber-d)}
+.btn-green{background:var(--green);color:#fff}.btn-green .ar{background:#fff;color:var(--green)}.btn-green:hover{background:var(--green-d)}
+.btn-white{background:#fff;color:var(--green)}.btn-white .ar{background:var(--green);color:#fff}
+.btn-ghost{background:rgba(255,255,255,.14);color:#fff;padding:0 26px;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.5)}.btn-ghost:hover{background:rgba(255,255,255,.26)}
+.btn-line{background:transparent;color:var(--green);padding:0 24px;box-shadow:inset 0 0 0 1.5px var(--green)}.btn-line:hover{background:var(--green);color:#fff}
+.btn-sm{min-height:44px;font-size:13px;padding:6px 6px 6px 18px;gap:10px}.btn-sm .ar{width:32px;height:32px;font-size:14px}
+.btn-line.btn-sm{padding:0 20px}
+
+/* top bar + плавающая шапка */
+.topbar{background:var(--forest);color:#c3d0c5;font-size:12.5px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:24px;padding-top:9px;padding-bottom:9px}
+header{position:sticky;top:10px;z-index:30;padding-top:12px}
+.bar{position:relative;background:#fff;border-radius:var(--r-lg);height:76px;padding:0 16px 0 22px;display:flex;align-items:center;gap:20px;box-shadow:0 6px 24px rgba(14,38,21,.07)}
+.bar>*{flex:none}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo .mark{width:46px;height:46px;background:var(--green);color:#fff;font:700 20px/46px var(--font-family);text-align:center;letter-spacing:-.04em;border-radius:14px;flex:none}
+.logo b{display:block;font:700 14px/1.15 var(--font-family);letter-spacing:.01em;text-transform:uppercase}
+.logo small{display:block;font-size:11px;color:var(--steel);margin-top:3px;max-width:200px}
+.bar .logo small{display:none}
+.bar .btn{margin-left:0}
+nav{display:flex;align-items:center;gap:22px;font-size:13px;font-weight:600;flex:1 1 auto!important;justify-content:center;min-width:0}
+nav a.cat-link{display:inline-flex;align-items:center;gap:8px;color:var(--green)}
+nav a.cat-link .ic{width:17px;height:17px;flex:none}
+.nav-extra{display:none!important}
+nav a{text-decoration:none;white-space:nowrap}
+nav a:hover{color:var(--green)}
+.h-phone{text-decoration:none;white-space:nowrap;font:600 15px var(--font-family)}
+.burger{display:none}
+
+/* hero — на всю ширину, фото техники внутри */
+.hero{padding:14px 0 0}
+.hero-card{position:relative;border-radius:var(--r-xl);overflow:hidden;min-height:620px;color:#fff;
+  background:radial-gradient(ellipse 48% 70% at 70% 58%,#3f8147 0%,#245f2b 45%,rgba(23,92,28,0) 100%),linear-gradient(120deg,#0b2011 0%,#12401a 55%,#175c1c 100%)}
+.hero-text{position:relative;z-index:3;max-width:540px;padding:72px 0 72px 64px}
+.hero h1{font-size:42px;line-height:1.1;letter-spacing:-.025em;font-weight:600;margin:20px 0 22px}
+.hero h1 em{font-style:normal;color:var(--amber)}
+.hero .lead{font-size:17px;color:#dbe8dd;max-width:480px;margin-bottom:12px}
+.hero .lead2{font-size:13.5px;color:#a9c2ad;margin-bottom:34px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.hero-art{position:absolute;inset:0;z-index:2;pointer-events:none}
+.hero-art img{position:absolute;height:auto;filter:drop-shadow(0 22px 24px rgba(0,0,0,.35))}
+.hero-art .a1{width:34%;max-width:470px;right:22%;bottom:48px}
+.hero-art .a2{width:22%;max-width:300px;right:4%;bottom:60px}
+.hero-art .a3{width:11%;max-width:150px;right:50%;bottom:36px;z-index:2}
+.hero-chip{position:absolute;z-index:3;right:28px;top:26px;background:rgba(255,255,255,.14);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.28);color:#fff;border-radius:999px;padding:10px 18px;font:600 13px/1 var(--font-family)}
+
+/* карточки-показатели */
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;padding-top:14px}
+.stat{background:#fff;border-radius:var(--r-lg);padding:26px 24px 24px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between}
+.stat b{font:500 40px/1 var(--font-family);letter-spacing:-.02em;color:var(--green)}
+.stat p{font-size:13.5px;color:var(--ink-2);line-height:1.4;margin-top:18px}
+.stat.fill{background:var(--green)}.stat.fill b{color:#fff}.stat.fill p{color:#cfe0d1}
+
+/* две входные двери */
+.doors{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding-top:14px}
+.door{background:#fff;border-radius:var(--r-lg);padding:26px 26px 26px 30px;display:flex;align-items:center;gap:20px;text-decoration:none;transition:background .15s}
+.door:hover{background:#f7faf7}
+.door .num{font:100 52px/1 var(--font-family);color:var(--green)}
+.door div{flex:1}
+.door b{font:600 19px/1.2 var(--font-family);display:block;margin-bottom:6px}
+.door small{font-size:14px;color:var(--ink-2)}
+.door .ar{width:46px;height:46px;border-radius:50%;background:var(--amber);display:grid;place-items:center;font-size:18px;flex:none}
+
+/* каталог */
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:28px}
+.sec-head h2{margin-top:14px}
+.sec-head p{max-width:400px;color:var(--ink-2)}
+.grp{margin:0 0 14px 4px;font:600 14px/1 var(--font-family);color:var(--ink)}
+.grp i{font-style:normal;font-weight:500;color:var(--steel);font-family:var(--second-family);margin-left:8px;font-size:13px}
+.cat{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.cat+.grp{margin-top:34px}
+.tile{display:flex;flex-direction:column;background:#fff;border-radius:var(--r-lg);padding:10px;text-decoration:none;transition:box-shadow .2s,transform .2s}
+.tile:hover{box-shadow:0 14px 30px rgba(14,38,21,.12);transform:translateY(-3px)}
+.tile .ph{height:200px;background:var(--panel);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;padding:20px}
+.tile .ph img{max-height:100%;max-width:100%;width:auto;height:auto;object-fit:contain}
+.tile .cap{padding:14px 10px 8px;display:flex;flex-direction:column;gap:4px}
+.tile .cap b{font:600 16px/1.2 var(--font-family)}
+.tile .cap span{font-size:12.5px;color:var(--steel)}
+
+/* паспорта */
+.pass-card{background:#fff;border-radius:var(--r-xl);padding:14px;display:grid;grid-template-columns:7fr 5fr;gap:14px}
+.pass-photo{background:var(--panel);border-radius:var(--r-lg);display:flex;align-items:center;justify-content:center;padding:36px;min-height:400px;position:relative}
+.pass-photo img{width:100%;max-width:560px}
+.pass-body{padding:20px 22px 12px;display:flex;flex-direction:column}
+.pass-body h3{font:600 26px/1.2 var(--font-family);letter-spacing:-.01em;margin:14px 0 20px}
+.spec{width:100%;border-collapse:collapse;font-size:14px}
+.spec td{padding:12px 0;border-top:1px solid var(--line);vertical-align:top}
+.spec td:first-child{color:var(--steel);width:52%}
+.spec td:last-child{font:600 14px var(--font-family)}
+.spec .q{font-weight:400!important;color:var(--steel)}
+.pass-foot{margin-top:auto;padding-top:22px;display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.pass-foot p{font-size:13px;color:var(--ink-2);flex:1 1 200px}
+.pgrid{margin-top:14px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.pcard{background:#fff;border-radius:var(--r-lg);padding:10px;display:flex;flex-direction:column}
+.pcard .ph{height:190px;background:var(--panel);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;padding:18px;position:relative}
+.pcard .ph img{max-height:100%;max-width:100%;width:auto;height:auto;object-fit:contain}
+.badge{position:absolute;left:10px;top:10px;background:var(--amber);color:#2a1f00;font:600 11px/1 var(--font-family);border-radius:999px;padding:7px 11px}
+.badge.g{background:var(--green);color:#fff}
+.pcard h3{font:600 15px/1.3 var(--font-family);padding:16px 10px 10px;min-height:70px}
+.pcard dl{display:grid;grid-template-columns:auto 1fr;font-size:12.5px;padding:0 10px;margin-top:auto}
+.pcard dt,.pcard dd{padding:7px 0}
+.pcard dt{color:var(--steel)}
+.pcard dd{font:600 12.5px var(--font-family);text-align:right}
+.pcard .btn{margin-top:12px;align-self:stretch;justify-content:space-between}
+.pcard-cta{background:var(--green);color:#fff;padding:28px;justify-content:space-between}
+.pcard-cta h3{padding:0;min-height:0;font-size:22px;color:#fff;margin-bottom:12px}
+.pcard-cta p{font-size:14px;color:#cfe0d1;margin-bottom:22px}
+.pcard-cta .btn{margin-top:0;align-self:flex-start}
+
+/* завод */
+.fac-card{background:var(--forest);border-radius:var(--r-xl);padding:14px;display:grid;grid-template-columns:5fr 7fr;gap:14px;color:#fff}
+.fac-photo{border-radius:var(--r-lg);overflow:hidden;position:relative;min-height:420px}
+.fac-photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.fac-photo figcaption{position:absolute;left:14px;bottom:14px;background:rgba(14,38,21,.78);backdrop-filter:blur(6px);border-radius:999px;padding:9px 16px;font:600 12px/1 var(--font-family)}
+.fac-body{padding:34px 34px 30px 26px}
+.fac-body h2{margin:14px 0 16px;color:#fff}
+.fac-body .intro{color:#bfd0c2;max-width:560px;margin-bottom:28px}
+.pts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+.pt{background:rgba(255,255,255,.07);border-radius:var(--r-md);padding:18px;display:flex;gap:14px}
+.pt .n{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.14);display:grid;place-items:center;font:500 12px var(--font-family);flex:none}
+.pt h3{font:600 16px/1.25 var(--font-family);margin-bottom:6px}
+.pt p{font-size:13.5px;color:#bfd0c2;line-height:1.5}
+.pt small{display:block;margin-top:8px;font:600 12px/1.4 var(--font-family);color:var(--amber)}
+.fac-cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+
+/* статьи и отзывы */
+.arts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.art{background:#fff;border-radius:var(--r-lg);padding:26px;display:flex;flex-direction:column;gap:12px;text-decoration:none;min-height:260px;transition:box-shadow .2s}
+.art:hover{box-shadow:0 14px 30px rgba(14,38,21,.1)}
+.art .chip{align-self:flex-start;background:var(--panel);border-radius:999px;padding:8px 14px;font:600 12px/1 var(--font-family);color:var(--green)}
+.art .date{font-size:12.5px;color:var(--steel)}
+.art h3{font:600 20px/1.25 var(--font-family)}
+.art p{font-size:14.5px;color:var(--ink-2)}
+.art .go{margin-top:auto;display:flex;align-items:center;gap:10px;font:600 13px var(--font-family);color:var(--green)}
+.art .go i{font-style:normal;width:32px;height:32px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.rev{background:#fff;border-radius:var(--r-lg);padding:28px;display:flex;flex-direction:column;gap:24px}
+.rev blockquote{font-size:15px;line-height:1.65}
+.rev .who{margin-top:auto;display:flex;gap:12px;align-items:center;font-size:13px;color:var(--steel)}
+.rev .av{width:44px;height:44px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font:600 13px var(--font-family);flex:none}
+.rev .who b{display:block;color:var(--ink);font-size:14px;font-weight:600}
+
+/* контакты */
+.order-grid{display:grid;grid-template-columns:7fr 5fr;gap:14px}
+.form-card{background:#fff;border-radius:var(--r-xl);padding:40px}
+.form-card h2{margin:14px 0 10px}
+.form-card .sub{color:var(--ink-2);margin-bottom:26px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{font-size:13px;font-weight:600;display:flex;flex-direction:column;gap:7px}
+input,textarea{font:500 15px var(--second-family);padding:15px 18px;border:1px solid var(--line);background:var(--panel);border-radius:var(--r-sm);color:var(--ink);width:100%}
+input::placeholder,textarea::placeholder{font-family:var(--second-family);font-weight:500;color:#8b948d}
+textarea{min-height:96px;resize:vertical}
+.full{grid-column:1/-1}
+.contacts{background:#fff;border-radius:var(--r-xl);padding:36px}
+.contacts h3{font:600 20px var(--font-family);margin-bottom:12px}
+.c-row{padding:16px 0;border-top:1px solid var(--line);font-size:15px}
+.c-row .eyebrow{margin-bottom:9px}
+.c-row a{text-decoration:none}.c-row a:hover{color:var(--green)}
+.c-row .big{font:700 20px var(--font-family)}
+.c-row small{color:var(--steel);font-size:13px}
+
+footer.main{background:var(--forest);color:#a9bcad;font-size:13px;padding:52px 0 28px;margin-top:36px;border-radius:var(--r-xl) var(--r-xl) 0 0}
+footer.main .cols{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;margin-bottom:36px}
+footer.main .logo b{color:#fff}footer.main .logo small{color:#86a08b}
+footer.main h4{font:600 13px var(--font-family);color:#fff;margin-bottom:14px}
+footer.main li{list-style:none;margin-bottom:9px}
+footer.main a{text-decoration:none;color:#c9d9cc}
+footer.main .about{margin-top:16px;max-width:320px}
+footer.main .bottom{border-top:1px solid #2a4630;padding-top:20px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+/* ---------- адаптив ---------- */
+@media (max-width:1380px){
+  .bar .h-phone{display:none}
+}
+@media (max-width:1180px){
+  nav{gap:14px;font-size:12px}
+  .hero-text{padding-left:44px}
+  .hero h1{font-size:40px}
+  .cat{grid-template-columns:repeat(3,1fr)}
+  .pgrid{grid-template-columns:repeat(2,1fr)}
+  .stats{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:1100px){
+  .bar>.btn{display:none}
+  nav{display:none;position:absolute;top:calc(100% + 8px);left:0;right:0;background:#fff;border-radius:var(--r-lg);padding:14px 22px 22px;flex-direction:column;align-items:stretch;gap:0;font-size:15px;box-shadow:0 18px 40px rgba(14,38,21,.16);z-index:40}
+  .bar.open nav{display:flex}
+  nav a{padding:14px 0;border-bottom:1px solid var(--line)}
+  nav a.cat-link{border-bottom:1px solid var(--line)}
+  nav a.nav-extra{display:flex!important;border:0}
+  nav a.nav-extra.tel{font-weight:600;padding-top:18px}
+  nav a.nav-extra.btn{display:inline-flex!important;margin-top:8px;padding:6px 6px 6px 22px;justify-content:space-between;color:#fff}
+  .burger{display:block;margin-left:auto;width:44px;height:44px;border-radius:14px;border:0;background:var(--panel);position:relative}
+  .burger::before,.burger::after{content:"";position:absolute;left:12px;right:12px;height:2px;background:var(--ink);top:16px;box-shadow:0 6px 0 var(--ink);border-radius:2px}
+  .burger::after{top:28px;box-shadow:none}
+}
+@media (max-width:900px){
+  section{padding:26px 0}
+  h2{font-size:28px}
+  .topbar .addr{display:none}
+  .hero-card{min-height:0;display:flex;flex-direction:column}
+  .hero-text{padding:44px 32px 8px;max-width:none}
+  .hero-art{position:relative;inset:auto;height:300px}
+  .hero-art .a1{width:52%;right:30%;bottom:26px}
+  .hero-art .a2{width:30%;right:5%;bottom:34px}
+  .hero-art .a3{width:20%;right:58%;bottom:20px}
+  .hero-chip{display:none}
+  .doors{grid-template-columns:1fr}
+  .sec-head{flex-direction:column;align-items:flex-start;gap:12px}
+  .pass-card,.fac-card,.order-grid{grid-template-columns:1fr}
+  .pass-photo{min-height:300px;padding:24px}
+  .fac-photo{min-height:260px}
+  .arts,.rev-grid{grid-template-columns:1fr}
+  .art{min-height:0}
+  footer.main .cols{grid-template-columns:1fr 1fr}
+}
+@media (max-width:600px){
+  .wrap{padding:0 12px}
+  .topbar{font-size:11.5px}
+  .topbar .hrs{display:none}
+  .topbar .wrap{justify-content:center}
+  header{top:6px;padding-top:8px}
+  .bar{height:64px;padding:0 10px 0 14px;border-radius:20px}
+  .logo .mark{width:40px;height:40px;font-size:17px;line-height:40px;border-radius:12px}
+  .logo b{font-size:12px}
+  .hero{padding-top:10px}
+  .hero-card{border-radius:26px}
+  .hero-text{padding:34px 22px 4px}
+  .hero h1{font-size:28px}
+  .hero .lead{font-size:15px}
+  .hero-actions .btn{flex:1}
+  .hero-actions .btn-ghost{min-height:52px}
+  .hero-art{height:250px;margin-top:18px}
+  .hero-art .a1{width:50%;right:30%}
+  .stats{grid-template-columns:1fr 1fr;gap:10px}
+  .stat{padding:18px 16px;min-height:128px}
+  .stat b{font-size:28px}
+  .stat p{font-size:12.5px;margin-top:12px}
+  .stat:last-child{grid-column:1/-1}
+  .door{padding:20px}
+  .door .num{font-size:40px}
+  .cat{grid-template-columns:1fr 1fr;gap:10px}
+  .cat .tile:last-child{grid-column:1/-1}
+  .tile{padding:8px;border-radius:20px}
+  .tile .ph{height:130px;padding:12px}
+  .tile .cap{padding:10px 6px 6px}.tile .cap b{font-size:14px}.tile .cap span{font-size:11.5px}
+  .pass-card{padding:10px;border-radius:26px}
+  .pass-photo{min-height:230px;padding:18px}
+  .pass-body{padding:14px 10px 8px}
+  .pass-body h3{font-size:21px}
+  .pgrid{grid-template-columns:1fr}
+  .pcard:not(.pcard-cta){display:grid;grid-template-columns:128px 1fr;grid-template-rows:auto 1fr auto}
+  .pcard .ph{height:auto;grid-row:1/4;padding:8px}
+  .pcard h3{min-height:0;padding:10px 12px 4px;font-size:14px}
+  .pcard dl{grid-column:2;padding:0 12px;font-size:12px}
+  .pcard .btn{grid-column:2;margin:8px 8px 4px 12px}
+  .badge{font-size:10px;padding:6px 9px;left:6px;top:6px}
+  .fac-card{padding:10px;border-radius:26px}
+  .fac-body{padding:22px 12px 14px}
+  .pts{grid-template-columns:1fr}
+  .form-card,.contacts{padding:24px 18px;border-radius:26px}
+  form{grid-template-columns:1fr}
+  footer.main .cols{grid-template-columns:1fr;gap:26px}
+  .fac-cta .btn{flex:1}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+  <span class="addr">Молодечно · Доставка по всей Беларуси</span>
+  <span class="hrs">08:00–17:00 · Обед 12:00–13:00</span>
+</div></div>
+
+<header><div class="wrap"><div class="bar">
+  <a class="logo" href="#"><span class="mark">МЗ</span><span><b>Механический<br>завод</b><small>Производим. Помогаем. Гарантируем.</small></span></a>
+  <nav>
+    <a class="cat-link" href="#catalog"><svg class="ic" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><rect x="1.5" y="1.5" width="6.2" height="6.2" rx="2"/><rect x="10.3" y="1.5" width="6.2" height="6.2" rx="2"/><rect x="1.5" y="10.3" width="6.2" height="6.2" rx="2"/><rect x="10.3" y="10.3" width="6.2" height="6.2" rx="2"/></svg>Каталог</a>
+    <a href="#factory">О производстве</a>
+    <a href="#contacts">Доставка и оплата</a>
+    <a href="#articles">Полезные статьи</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#contacts">Контакты</a>
+    <a class="nav-extra tel" href="tel:+375176581010">+375 (176) 58-10-10</a>
+    <a class="nav-extra btn btn-green" href="#contacts">Заказать звонок <span class="ar">↗</span></a>
+  </nav>
+  <a class="h-phone" href="tel:+375176581010">+375 (176) 58-10-10</a>
+  <a class="btn btn-green btn-sm" href="#contacts">Заказать звонок <span class="ar">↗</span></a>
+  <button class="burger" aria-label="Меню" aria-expanded="false" onclick="var b=this.closest('.bar');b.classList.toggle('open');this.setAttribute('aria-expanded',b.classList.contains('open'))"></button>
+</div></div></header>
+
+<!-- HERO -->
+<div class="hero"><div class="wrap">
+  <div class="hero-card">
+    <div class="hero-art">
+      <img class="a1" src="assets/cut/potato.png" alt="Картофелекопалка для мотоблока">
+      <img class="a2" src="assets/cut/reverse.png" alt="Плуг оборотный П1-2х215/14-11">
+      <img class="a3" src="assets/cut/hiller.png" alt="Окучник однорядный ОР-1">
+    </div>
+    <div class="hero-text">
+      <span class="eyebrow w">Белорусское производство · 25 лет на рынке</span>
+      <h1>Прицепное и навесное оборудование для сельхозтехники — <em>от завода в Молодечно</em></h1>
+      <p class="lead">Прицепы, плуги, окучники, бороны и картофелекопалки для мотоблоков и минитракторов. Напрямую от производителя.</p>
+      <p class="lead2">Более 50 наименований · склад в Молодечно · доставка по Беларуси · гарантия 12 мес.</p>
+      <div class="hero-actions">
+        <a class="btn btn-amber" href="#catalog">Перейти в каталог <span class="ar">↗</span></a>
+        <a class="btn btn-ghost" href="#contacts">Узнать цены</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat fill"><b>25 лет</b><p>на рынке</p></div>
+    <div class="stat"><b>50+</b><p>наименований оборудования</p></div>
+    <div class="stat"><b>12 мес.</b><p>гарантия на оборудование</p></div>
+    <div class="stat"><b>1 день</b><p>отгрузка при наличии на складе</p></div>
+    <div class="stat"><b>по РБ</b><p>доставка, оплата при получении</p></div>
+  </div>
+
+  <div class="doors">
+    <a class="door" href="#catalog"><span class="num">01</span><div><b>К мотоблокам</b><small>Прицепы, плуги, окучники, бороны, картофелекопалки, адаптеры</small></div><span class="ar">↗</span></a>
+    <a class="door" href="#catalog"><span class="num">02</span><div><b>Для минитракторов</b><small>Навесное оборудование, отвалы, сцепки — универсальные крепления</small></div><span class="ar">↗</span></a>
+  </div>
+</div></div>
+
+<!-- КАТАЛОГ -->
+<section id="catalog"><div class="wrap">
+  <div class="sec-head">
+    <div><span class="eyebrow">Каталог продукции</span><h2>Оборудование для ваших задач</h2></div>
+    <p>Подберём оборудование под вашу технику, участок и тип работ.</p>
+  </div>
+
+  <p class="grp">Работа в поле <i>плуги, бороны, окучники, картофелекопалки, отвалы</i></p>
+  <div class="cat">
+    <a class="tile" href="#"><div class="ph"><img src="assets/cut/plow.png" alt="Плуги"></div><div class="cap"><b>Плуги</b><span>Оборотные и двухкорпусные</span></div></a>
+    <a class="tile" href="#"><div class="ph"><img src="assets/cut/harrow.png" alt="Бороны"></div><div class="cap"><b>Бороны</b><span>Для обработки почвы</span></div></a>
+    <a class="tile" href="#"><div class="ph"><img src="assets/cut/hiller.png" alt="Окучники"></div><div class="cap"><b>Окучники</b><span>Одно- и двухрядные</span></div></a>
+    <a class="tile" href="#"><div class="ph"><img src="assets/cut/potato.png" alt="Картофелекопалки"></div><div class="cap"><b>Картофелекопалки</b><span>Копалки и сажалки</span></div></a>
+    <a class="tile" href="#"><div class="ph"><img src="assets/cut/blade.png" alt="Отвалы"></div><div class="cap"><b>Отвалы</b><span>Для снега и грунта</span></div></a>
+  </div>
+
+  <p class="grp">Перевозка и навеска <i>прицепы, адаптеры, грунтозацепы, сцепки</i></p>
+  <div class="cat">
+    <a class="tile" href="#"><div class="ph"><img src="assets/cut/trailer.png" alt="Прицепы"></div><div class="cap"><b>Прицепы</b><span>К мотоблокам</span></div></a>
+    <a class="tile" href="#"><div class="ph"><img src="assets/cut/adapter.png" alt="Адаптеры"></div><div class="cap"><b>Адаптеры</b><span>К мотоблокам</span></div></a>
+    <a class="tile" href="#"><div class="ph"><img src="assets/cut/wheels.png" alt="Грунтозацепы"></div><div class="cap"><b>Грунтозацепы</b><span>Надёжное сцепление</span></div></a>
+    <a class="tile" href="#"><div class="ph"><img src="assets/cut/coupling.png" alt="Сцепки"></div><div class="cap"><b>Сцепки</b><span>Универсальные крепления</span></div></a>
+    <a class="tile" href="#"><div class="ph"><img src="assets/cut/tractor-plow.png" alt="Для минитракторов"></div><div class="cap"><b>Для минитракторов</b><span>Навесное оборудование</span></div></a>
+  </div>
+</div></section>
+
+<!-- ПАСПОРТА -->
+<section><div class="wrap">
+  <div class="sec-head">
+    <div><span class="eyebrow">Проверено в работе</span><h2>Популярное оборудование — с характеристиками</h2></div>
+    <p>У каждого изделия — модель, назначение, наличие и цена в одной карточке.</p>
+  </div>
+
+  <div class="pass-card">
+    <div class="pass-photo"><img src="assets/cut/trailer.png" alt="Прицеп к мотоблоку ТМ-4/600"></div>
+    <div class="pass-body">
+      <span class="eyebrow">Хит продаж · Прицепы</span>
+      <h3>Прицеп к мотоблоку ТМ-4/600</h3>
+      <table class="spec">
+        <tr><td>Модель</td><td>ТМ-4/600</td></tr>
+        <tr><td>Тип</td><td>Прицеп к мотоблоку</td></tr>
+        <tr><td>Грузоподъёмность</td><td>600 кг</td></tr>
+        <tr><td>Размеры кузова</td><td class="q">уточнить</td></tr>
+        <tr><td>Гарантия на оборудование</td><td>12 мес.</td></tr>
+        <tr><td>Наличие</td><td>уточняйте</td></tr>
+        <tr><td>Цена</td><td>по запросу</td></tr>
+      </table>
+      <div class="pass-foot">
+        <a class="btn btn-amber" href="#contacts">Узнать цену <span class="ar">↗</span></a>
+        <p>Оплата при получении. Совместимость с вашим мотоблоком подтвердит отдел продаж.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pgrid">
+    <article class="pcard"><div class="ph"><span class="badge">Хит продаж</span><img src="assets/cut/plow.png" alt="Плуг двухкорпусный П1-2х215/14-13"></div><h3>Плуг двухкорпусный П1-2х215/14-13</h3><dl><dt>Для</dt><dd>мотоблоков</dd><dt>Наличие</dt><dd>уточняйте</dd><dt>Цена</dt><dd>по запросу</dd></dl><a class="btn btn-green btn-sm" href="#contacts">Узнать цену <span class="ar">↗</span></a></article>
+    <article class="pcard"><div class="ph"><span class="badge g">Выбор покупателей</span><img src="assets/cut/hiller.png" alt="Окучник однорядный ОР-1"></div><h3>Окучник однорядный ОР-1</h3><dl><dt>Назначение</dt><dd>междурядная обработка</dd><dt>Наличие</dt><dd>уточняйте</dd><dt>Цена</dt><dd>по запросу</dd></dl><a class="btn btn-green btn-sm" href="#contacts">Узнать цену <span class="ar">↗</span></a></article>
+    <article class="pcard"><div class="ph"><span class="badge">Хит продаж</span><img src="assets/cut/potato.png" alt="Картофелекопалка для мотоблока"></div><h3>Картофелекопалка для мотоблока</h3><dl><dt>Тип</dt><dd>навесное оборудование</dd><dt>Наличие</dt><dd>уточняйте</dd><dt>Цена</dt><dd>по запросу</dd></dl><a class="btn btn-green btn-sm" href="#contacts">Узнать цену <span class="ar">↗</span></a></article>
+    <article class="pcard"><div class="ph"><span class="badge g">От производителя</span><img src="assets/cut/reverse.png" alt="Плуг оборотный П1-2х215/14-11"></div><h3>Плуг оборотный П1-2х215/14-11</h3><dl><dt>Конструкция</dt><dd>оборотная</dd><dt>Наличие</dt><dd>уточняйте</dd><dt>Цена</dt><dd>по запросу</dd></dl><a class="btn btn-green btn-sm" href="#contacts">Узнать цену <span class="ar">↗</span></a></article>
+    <article class="pcard"><div class="ph"><span class="badge g">Сезонный товар</span><img src="assets/cut/blade.png" alt="Отвал для снега и грунта"></div><h3>Отвал для снега и грунта</h3><dl><dt>Для</dt><dd>мотоблоков и минитракторов</dd><dt>Наличие</dt><dd>уточняйте</dd><dt>Цена</dt><dd>по запросу</dd></dl><a class="btn btn-green btn-sm" href="#contacts">Узнать цену <span class="ar">↗</span></a></article>
+    <article class="pcard"><div class="ph"><span class="badge g">От производителя</span><img src="assets/cut/harrow.png" alt="Борона для мотоблока БР1-2"></div><h3>Борона для мотоблока БР1-2</h3><dl><dt>Назначение</dt><dd>обработка и рыхление почвы</dd><dt>Наличие</dt><dd>уточняйте</dd><dt>Цена</dt><dd>по запросу</dd></dl><a class="btn btn-green btn-sm" href="#contacts">Узнать цену <span class="ar">↗</span></a></article>
+    <article class="pcard"><div class="ph"><span class="badge">Новинка</span><img src="assets/cut/adapter.png" alt="Адаптер для мотоблока"></div><h3>Адаптер для мотоблока</h3><dl><dt>Назначение</dt><dd>удобство работы с навеской</dd><dt>Наличие</dt><dd>уточняйте</dd><dt>Цена</dt><dd>по запросу</dd></dl><a class="btn btn-green btn-sm" href="#contacts">Узнать цену <span class="ar">↗</span></a></article>
+    <article class="pcard pcard-cta"><div><h3>Не знаете, какое оборудование подойдёт?</h3><p>Расскажите о вашей технике и задачах — поможем с выбором.</p></div><a class="btn btn-amber" href="#contacts">Получить консультацию <span class="ar">↗</span></a></article>
+  </div>
+</div></section>
+
+<!-- ЗАВОД -->
+<section id="factory"><div class="wrap">
+  <div class="fac-card">
+    <figure class="fac-photo">
+      <img src="assets/workshop.webp" alt="Здание ООО «Механический завод» в Молодечно">
+      <figcaption>Здание ООО «Механический завод» в Молодечно</figcaption>
+    </figure>
+    <div class="fac-body">
+      <span class="eyebrow w">Сделано в Беларуси</span>
+      <h2>Механический завод в Молодечно</h2>
+      <p class="intro">Производим прицепное и навесное оборудование для мотоблоков и минитракторов: для обработки почвы, перевозки грузов и сезонных работ.</p>
+      <div class="pts">
+        <div class="pt"><span class="n">01</span><div><h3>Собственное производство</h3><p>Заготовка, сварка и покраска — полный цикл изготовления на заводе.</p></div></div>
+        <div class="pt"><span class="n">02</span><div><h3>Заводской контроль</h3><p>Проверяем каждое изделие. Гарантия 12 месяцев на оборудование.</p></div></div>
+        <div class="pt"><span class="n">03</span><div><h3>Склад в Молодечно</h3><p>Продукция рядом с производством. Удобный самовывоз с завода.</p><small>ул. Великий Гостинец, 67, корп. 6</small></div></div>
+        <div class="pt"><span class="n">04</span><div><h3>Подбор под задачи</h3><p>Подберём оборудование под вашу технику, участок и тип работ.</p></div></div>
+      </div>
+      <div class="fac-cta"><a class="btn btn-amber" href="#contacts">Получить консультацию <span class="ar">↗</span></a><a class="btn btn-ghost" href="tel:+375176581010">+375 (176) 58-10-10</a></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- СТАТЬИ -->
+<section id="articles"><div class="wrap">
+  <div class="sec-head">
+    <div><span class="eyebrow">Опыт, которым делимся</span><h2>Полезно знать</h2></div>
+    <a class="btn btn-line" href="#">Все статьи</a>
+  </div>
+  <div class="arts">
+    <a class="art" href="#"><span class="chip">Выбор оборудования</span><span class="date">15 октября 2026</span><h3>Как выбрать прицеп к мотоблоку</h3><p>Грузоподъёмность, размер кузова и совместимость — разбираемся в главных параметрах.</p><span class="go"><i>↗</i>Читать статью</span></a>
+    <a class="art" href="#"><span class="chip">Обработка почвы</span><span class="date">8 октября 2026</span><h3>Плуг оборотный или двухкорпусный?</h3><p>Сравниваем конструкции и выбираем плуг под вашу технику и участок.</p><span class="go"><i>↗</i>Читать статью</span></a>
+    <a class="art" href="#"><span class="chip">Сезонные работы</span><span class="date">28 сентября 2026</span><h3>Отвал для снега: виды и монтаж</h3><p>На что обратить внимание при выборе отвала и подготовке техники к зиме.</p><span class="go"><i>↗</i>Читать статью</span></a>
+  </div>
+</div></section>
+
+<!-- ОТЗЫВЫ -->
+<section id="reviews"><div class="wrap">
+  <div class="sec-head">
+    <div><span class="eyebrow">Нас рекомендуют</span><h2>Техника работает. Клиенты довольны.</h2></div>
+    <a class="btn btn-line" href="#">Все отзывы</a>
+  </div>
+  <div class="rev-grid">
+    <div class="rev"><blockquote>«Уже несколько лет успешно работаем с Механическим заводом. Заказывали прицепы, плуги, окучники — качество отличное, сроки соблюдают всегда.»</blockquote><div class="who"><span class="av">АА</span><span><b>Александр Аремук</b>ООО «Спецтехномаркет»</span></div></div>
+    <div class="rev"><blockquote>«Приобрела прицеп и плуг для своего участка. Помогли подобрать под мой мотоблок «Нева». Собрали, показали как пользоваться, дали паспорт.»</blockquote><div class="who"><span class="av">ИЛ</span><span><b>Инесса Левошко</b>Частное хозяйство</span></div></div>
+    <div class="rev"><blockquote>«Прицепы для перевозки ягод и плодов служат уже 3 сезона без поломок. Профессионально, в срок, без сюрпризов. Спасибо коллективу!»</blockquote><div class="who"><span class="av">ТЛ</span><span><b>Татьяна Лашкевич</b>Компания «Ами Фрут»</span></div></div>
+  </div>
+</div></section>
+
+<!-- КОНТАКТЫ -->
+<section id="contacts"><div class="wrap order-grid">
+  <div class="form-card">
+    <span class="eyebrow">Всегда на связи</span>
+    <h2>Поможем с выбором оборудования</h2>
+    <p class="sub">Расскажите о вашей технике и задачах.</p>
+    <form onsubmit="return false">
+      <label>Имя<input type="text" placeholder="Как к вам обращаться"></label>
+      <label>Телефон<input type="tel" placeholder="+375"></label>
+      <label class="full">Ваша техника<input type="text" placeholder="Например, модель мотоблока или минитрактора"></label>
+      <label class="full">Что нужно сделать<textarea placeholder="Вспашка, перевозка грузов, уборка снега…"></textarea></label>
+      <div class="full"><button class="btn btn-amber" type="submit">Получить консультацию <span class="ar">↗</span></button></div>
+    </form>
+  </div>
+  <div class="contacts">
+    <h3>Приезжайте на завод</h3>
+    <div class="c-row"><span class="eyebrow">Адрес</span>г. Молодечно, ул. Великий Гостинец, 67, корп. 6<br><small>Склад и собственное производство</small></div>
+    <div class="c-row"><span class="eyebrow">Часы работы</span>08:00–17:00<br><small>Обед 12:00–13:00</small></div>
+    <div class="c-row"><span class="eyebrow">Телефон</span><a class="big" href="tel:+375176581010">+375 (176) 58-10-10</a><br><small>Поможем с выбором оборудования</small></div>
+    <div class="c-row"><span class="eyebrow">Почта</span><a href="mailto:mehzavod2001@yandex.by">mehzavod2001@yandex.by</a></div>
+  </div>
+</div></section>
+
+<footer class="main"><div class="wrap">
+  <div class="cols">
+    <div>
+      <a class="logo" href="#"><span class="mark">МЗ</span><span><b>Механический<br>завод</b><small>Производим. Помогаем. Гарантируем.</small></span></a>
+      <p class="about">Прицепное и навесное оборудование для сельхозтехники. Собственное производство в Молодечно.</p>
+    </div>
+    <div><h4>Каталог продукции</h4><ul><li><a href="#">Прицепы</a></li><li><a href="#">Плуги</a></li><li><a href="#">Окучники</a></li><li><a href="#">Бороны</a></li><li><a href="#">Картофелекопалки</a></li></ul></div>
+    <div><h4>Покупателям</h4><ul><li><a href="#">О производстве</a></li><li><a href="#">Доставка и оплата</a></li><li><a href="#">Полезные статьи</a></li><li><a href="#">Отзывы</a></li><li><a href="#">Контакты</a></li></ul></div>
+    <div><h4>Контакты</h4><ul><li><a href="tel:+375176581010">+375 (176) 58-10-10</a></li><li><a href="mailto:mehzavod2001@yandex.by">mehzavod2001@yandex.by</a></li><li>г. Молодечно, ул. Великий Гостинец, 67, корп. 6</li><li><a href="#">Скачать прайс-лист</a></li></ul></div>
+  </div>
+  <div class="bottom"><span>© 2026 ООО «Механический завод»</span><span>Произведено в Беларуси. Сделано для работы.</span></div>
+</div></footer>
+</body>
+</html>
